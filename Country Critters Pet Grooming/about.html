@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+
+<div class="topnav">
+    <a href="about.html">About</a>
+    <a href="https://www.facebook.com/CCPetGroomer/">Facebook</a>
+    <a href="https://www.google.com/maps/dir//country+critters+pet+grooming/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x8822f44422b18a99:0xd9f9c5815181bba9?sa=X&ved=2ahUKEwjyy6nA3IjvAhWFU80KHcUTAIAQ9RcwG3oECD8QBQ">Directions</a>
+    <a href="services.html">Services</a>
+    <a href="app.php">Client Application</a>
+    <a href="index.html">Home</a>
+    <a href="javascript:void(0);" class="icon" onclick="changepage()"></a>
+    <div class="rightnav">
+        Country Critters Pet Grooming
+  </div>
+  <div class="menu1">
+    <button id="openmenubutton"><img src="menu.png" width="50px" height="50px" onclick="openmenu()"></button>
+    </div>
+</div>
+
+<div class="background"></div>
+
+<body>
+  <div class="overlay" id="overlay">
+    <div class="menu">
+    <button id="closemenubutton"><img src="close.jpg" width="50px" height="50px" onclick="closemenu()"></button><br><br>
+    <a href="index.html" id="menubutton"><b>Home</b></a><br><br>
+    <a href="app.php" id="menubutton"><b>Client Application</b></a><br><br>
+    <a href = "services.html" id="menubutton"><b>Services</b></a><br><br>
+    <a href="https://www.google.com/maps/dir//country+critters+pet+grooming/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x8822f44422b18a99:0xd9f9c5815181bba9?sa=X&ved=2ahUKEwjyy6nA3IjvAhWFU80KHcUTAIAQ9RcwG3oECD8QBQ" id="menubutton"><b>Directions</b></a><br><br>
+    <a href="https://www.facebook.com/CCPetGroomer/" id="menubutton"><b>Facebook</b></a><br><br>
+    <a href="about.html" id="menubutton"><b>About</b></a><br><br>
+    </div>
+  </div>
+    <div id="top"></div>
+    <header>Our Staff</header>
+    <div class="row">
+      <div class="column1" id='column1'>
+        <div class="card">
+          <div class= "picture">
+            <img src="" alt="Erin" id="image">
+          </div>
+          <div class="contain">
+            <h2 id="name">Erin Keyser</h2>
+            <p class="title">Owner/Groomer</p>
+            <p><button class="button" id="erinclick" onclick="erintext()">Learn More</button></p>
+          </div>
+        </div>
+        <div class="erinarrow"></div>
+        <div class="erinbiomobile" id="erinbiomobile">
+          My name is Erin Keyser, and I am the owner/groomer here at Country Critters Pet Grooming. I graduated from the Michigan School of Canine Cosmetology back in March of 2003. I have been in the field for over 17 years. Over the course of my career I was a grooming instructor where I had attended school. I worked in a veterinary clinic grooming animals with special needs and animals that needed sedation for grooming. I attended Cedar Valley College majoring in Veterinary Technology . I am Pet CPR and First Aid Certified. I am a registered member of the NDGAA and IJA grooming associations. I am continuing to further my education by starting my Master Grooming certification process which I hope to have completed by end of 2020. I frequent grooming expos around the US and I also am a Competitive Groomer.  Country Critters Pet Grooming has over 40 years of grooming experience between our 4 groomers.  I decided to open up my own grooming shop here in Saint Johns, Michigan where I live with my husband and two sons.  I have a Brittany named Emma, a Bichon named Eivin, and a black cat named Jack-O. I look forward to sharing my knowledge and experience with you and your furry friends!
+        </div>
+      </div>
+      
+      <div class="column2" id='column2'>
+        <div class="card">
+          <div class= "picture">
+            <img src="" alt="Placeholder" id="image">
+          </div>
+          <div class="contain">
+            <h2 id="name">Zeke Keyser</h2>
+            <p class="title">Tech Manager</p>
+            <p><button class="button" id="staff2click" onclick="staff2text()">Learn More</button></p>
+          </div>
+          <div class="staff2biomobile" id="staff2biomobile">
+            Hey! I'm Zeke, Erin's son and Tech Manager at Country Critters Pet Grooming!
+          </div>
+        </div>
+      </div>
+    
+      <div class="column3" id='column3'>
+        <div class="card">
+          <div class= "picture">
+            <img src="julia.jpeg" alt="Julia" id="image">
+          </div>
+          <div class="contain">
+            <h2 id="name">Julia</h2>
+            <p class="title">Groomer</p>
+            <p><button class="button" id="staff3click" onclick="staff3text()">Learn More</button></p>
+          </div>
+          <div class="staff3biomobile" id="staff3biomobile">
+            My name is Julia! I have been working with animals for over 4 years. I studied Veterinary Technology at Baker College and I am Pet CPR and First Aid certified. I have two sweet kitties, Malley and Leo, and will love your pets as much as I love my own!
+          </div>
+        </div>
+      </div>
+      <div class="column4" id='column4'>
+        <div class="card">
+          <div class= "picture">
+            <img src="" alt="Placeholder" id="image">
+          </div>
+          <div class="contain">
+            <h2 id="name">Amber</h2>
+            <p class="title">Groomer</p>
+            <p><button class="button" id="staff4click" onclick="staff4text()">Learn More</button></p>
+          </div>
+          <div class="staff4biomobile" id="staff4biomobile">
+            Placeholder Text
+          </div>
+        </div>
+      </div>
+      <div class="column5" id='column5'>
+        <div class="card">
+          <div class= "picture">
+            <img src="kaylin.jpeg" alt="Kaylin" id="image">
+          </div>
+          <div class="contain">
+            <h2 id="name">Kaylin Shaffer</h2>
+            <p class="title">Groomer</p>
+            <p><button class="button" id="staff5click" onclick="staff5text()">Learn More</button></p>
+          </div>
+          <div class="staff5biomobile" id="staff5biomobile">
+            Hi! My name is Kaylin Shaffer. I’m from Saint Johns and I just finished school at Michigan school of Canine Cosmetology. Choosing to be a dog groomer was an easy choice because of my love for animals. I have two dogs and a bunny, that I love very much. I cannot wait to get to know your fur babies and love them like my own!
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="erinbio" id="erinbio">
+      <div class="erinbackbio"></div>
+      My name is Erin Keyser, and I am the owner/groomer here at Country Critters Pet Grooming. I graduated from the Michigan School of Canine Cosmetology back in March of 2003. I have been in the field for over 17 years. Over the course of my career I was a grooming instructor where I had attended school. I worked in a veterinary clinic grooming animals with special needs and animals that needed sedation for grooming. I attended Cedar Valley College majoring in Veterinary Technology . I am Pet CPR and First Aid Certified. I am a registered member of the NDGAA and IJA grooming associations. I am continuing to further my education by starting my Master Grooming certification process which I hope to have completed by end of 2020. I frequent grooming expos around the US and I also am a Competitive Groomer.  Country Critters Pet Grooming has over 40 years of grooming experience between our 4 groomers.  I decided to open up my own grooming shop here in Saint Johns, Michigan where I live with my husband and two sons.  I have a Brittany named Emma, a Bichon named Eivin, and a black cat named Jack-O. I look forward to sharing my knowledge and experience with you and your furry friends! 
+    </div>
+    <div class="staff2bio" id="staff2bio">
+      <div class="staff2backbio"></div>
+      Hey! I'm Zeke, Erin's son and Tech Manager at Country Critters Pet Grooming!
+    </div>
+    <div class="staff3bio" id="staff3bio">
+      <div class="staff3backbio"></div>
+      My name is Julia! I have been working with animals for over 4 years. I studied Veterinary Technology at Baker College and I am Pet CPR and First Aid certified. I have two sweet kitties, Malley and Leo, and will love your pets as much as I love my own!
+    </div>
+    <div class="staff4bio" id="staff4bio">
+      <div class="staff4backbio"></div>
+      Placeholder Text
+    </div>
+    <div class="staff5bio" id="staff5bio">
+      <div class="staff5backbio"></div>
+     Hi! My name is Kaylin Shaffer. I’m from Saint Johns and I just finished school at Michigan school of Canine Cosmetology. Choosing to be a dog groomer was an easy choice because of my love for animals. I have two dogs and a bunny, that I love very much. I cannot wait to get to know your fur babies and love them like my own!
+    </div>
+</body>
+
+<script>
+    function changepage() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }</script>
+
+
+<script>
+ function erintext() {
+    var bio1 = document.getElementById('erinbio');
+    var bio2 = document.getElementById('staff2bio');
+    var bio3 = document.getElementById('staff3bio');
+    var bio4 = document.getElementById('staff4bio');
+    var bio5 = document.getElementById('staff5bio');
+    var mobilebio1 = document.getElementById('erinbiomobile')
+    var mobilebio2 = document.getElementById('staff2biomobile')
+    var mobilebio3 = document.getElementById('staff3biomobile')
+    var mobilebio4 = document.getElementById('staff4biomobile')
+    var mobilebio5 = document.getElementById('staff5biomobile')
+    /*var erinp = document.getElementsByClassName('column1').style;
+    var staff2p = document.getElementsByClassName('column2').style;
+    var staff3p = document.getElementsByClassName('column3').style;
+    var staff4p = document.getElementsByClassName('column4').style;
+    var staff5p = document.getElementsByClassName('column5').style;*/
+    var displaySetting1 = bio1.style.display;
+    var displaySetting2 = bio2.style.display;
+    var displaySetting3 = bio3.style.display;
+    var displaySetting4 = bio4.style.display;
+    var displaySetting5 = bio5.style.display;
+    var displaySettingM1 = mobilebio1.style.display;
+    var displaySettingM2 = mobilebio2.style.display;
+    var displaySettingM3 = mobilebio3.style.display;
+    var displaySettingM4 = mobilebio4.style.display;
+    var displaySettingM5 = mobilebio5.style.display;
+    var click1 = document.getElementById('erinclick');
+    var click2 = document.getElementById('staff2click')
+    var click3 = document.getElementById('staff3click')
+    var click4 = document.getElementById('staff4click')
+    var click5 = document.getElementById('staff5click')
+    if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+      if (displaySettingM1 == 'block') {
+        mobilebio1.style.display = 'none'
+        click1.innerHTML = 'Learn More'
+      } else { 
+      if(displaySettingM2 == 'block'){
+        mobilebio2.style.display = 'none'
+        click2.innerHTML = 'Learn More'
+      } else if(displaySettingM3 == 'block'){
+        mobilebio3.style.display = 'none'
+        click3.innerHTML = 'Learn More'
+      } else if(displaySettingM4 == 'block') {
+        mobilebio4.style.display = 'none'
+        click4.innerHTML = 'Learn More'
+      } else if(displaySettingM5 == 'block') {
+        mobilebio5.style.display = 'none'
+        click5.innerHTML = 'Learn More'
+      }
+      mobilebio1.style.display = 'block'
+      click1.innerHTML = 'Close'
+    }
+  }
+    console.log("Normal Click Sent")
+    if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){}else
+    if(displaySetting1 == 'block'){
+      bio1.style.display = 'none'
+      click1.innerHTML = 'Learn More'
+    } else {
+    if(displaySetting2 == 'block'){
+      bio2.style.display = 'none'
+      click2.innerHTML = 'Learn More'
+    } else 
+    if(displaySetting3 == 'block'){
+      bio3.style.display = 'none'
+      click3.innerHTML = 'Learn More'
+    } else 
+    if(displaySetting4 == 'block') {
+      bio4.style.display = 'none'
+      click4.innerHTML = "Learn More"
+    } else 
+    if(displaySetting5 == 'block'){
+      bio5.style.display = 'none'
+      click5.innerHTML = "Learn More"
+    } 
+    bio1.style.display = 'block'
+    click1.innerHTML = 'Close'
+    bio1.scrollIntoView()
+ }
+}
+</script>
+<script>
+  function staff2text() {
+     console.log("Staff 2 Click sent")
+    var bio1 = document.getElementById('erinbio');
+    var bio2 = document.getElementById('staff2bio');
+    var bio3 = document.getElementById('staff3bio');
+    var bio4 = document.getElementById('staff4bio');
+    var bio5 = document.getElementById('staff5bio');
+    var mobilebio1 = document.getElementById('erinbiomobile')
+    var mobilebio2 = document.getElementById('staff2biomobile')
+    var mobilebio3 = document.getElementById('staff3biomobile')
+    var mobilebio4 = document.getElementById('staff4biomobile')
+    var mobilebio5 = document.getElementById('staff5biomobile')
+    var displaySetting1 = bio1.style.display;
+    var displaySetting2 = bio2.style.display;
+    var displaySetting3 = bio3.style.display;
+    var displaySetting4 = bio4.style.display;
+    var displaySetting5 = bio5.style.display;
+    var displaySettingM1 = mobilebio1.style.display;
+    var displaySettingM2 = mobilebio2.style.display;
+    var displaySettingM3 = mobilebio3.style.display;
+    var displaySettingM4 = mobilebio4.style.display;
+    var displaySettingM5 = mobilebio5.style.display;
+    var click1 = document.getElementById('erinclick');
+    var click2 = document.getElementById('staff2click')
+    var click3 = document.getElementById('staff3click')
+    var click4 = document.getElementById('staff4click')
+    var click5 = document.getElementById('staff5click')
+    if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+      if (displaySettingM2 == 'block') {
+        mobilebio2.style.display = 'none'
+        click2.innerHTML = 'Learn More'
+      } else { 
+      if(displaySettingM1 == 'block'){
+        mobilebio1.style.display = 'none'
+        click1.innerHTML = 'Learn More'
+      } else if(displaySettingM3 == 'block'){
+        mobilebio3.style.display = 'none'
+        click3.innerHTML = 'Learn More'
+      } else if(displaySettingM4 == 'block') {
+        mobilebio4.style.display = 'none'
+        click4.innerHTML = 'Learn More'
+      } else if(displaySettingM5 == 'block') {
+        mobilebio5.style.display = 'none'
+        click5.innerHTML = 'Learn More'
+      }
+      mobilebio2.style.display = 'block'
+      click2.innerHTML = 'Close'
+    }
+  }
+    console.log("Normal Click Sent")
+    if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){}else
+    if(displaySetting2 == 'block'){
+      bio2.style.display = 'none'
+      click2.innerHTML = 'Learn More'
+    } else {
+    if(displaySetting1 == 'block'){
+      bio1.style.display = 'none'
+      click1.innerHTML = 'Learn More'
+    } else 
+    if(displaySetting3 == 'block'){
+      bio3.style.display = 'none'
+      click3.innerHTML = 'Learn More'
+    } else 
+    if(displaySetting4 == 'block') {
+      bio4.style.display = 'none'
+      click4.innerHTML = "Learn More"
+    } else 
+    if(displaySetting5 == 'block'){
+      bio5.style.display = 'none'
+      click5.innerHTML = "Learn More"
+    } 
+    bio2.style.display = 'block'
+    click2.innerHTML = 'Close'
+    bio2.scrollIntoView()
+ }
+   }
+ </script>
+
+<script>
+  function staff3text() {
+     console.log("Staff 3 Click sent")
+     var bio = document.getElementById('staff3bio');
+     var displaySetting = bio.style.display;
+     var click = document.getElementById('staff3click');
+     var bio1 = document.getElementById('erinbio');
+    var bio2 = document.getElementById('staff2bio');
+    var bio3 = document.getElementById('staff3bio');
+    var bio4 = document.getElementById('staff4bio');
+    var bio5 = document.getElementById('staff5bio');
+    var mobilebio1 = document.getElementById('erinbiomobile')
+    var mobilebio2 = document.getElementById('staff2biomobile')
+    var mobilebio3 = document.getElementById('staff3biomobile')
+    var mobilebio4 = document.getElementById('staff4biomobile')
+    var mobilebio5 = document.getElementById('staff5biomobile')
+    var displaySetting1 = bio1.style.display;
+    var displaySetting2 = bio2.style.display;
+    var displaySetting3 = bio3.style.display;
+    var displaySetting4 = bio4.style.display;
+    var displaySetting5 = bio5.style.display;
+    var displaySettingM1 = mobilebio1.style.display;
+    var displaySettingM2 = mobilebio2.style.display;
+    var displaySettingM3 = mobilebio3.style.display;
+    var displaySettingM4 = mobilebio4.style.display;
+    var displaySettingM5 = mobilebio5.style.display;
+    var click1 = document.getElementById('erinclick');
+    var click2 = document.getElementById('staff2click')
+    var click3 = document.getElementById('staff3click')
+    var click4 = document.getElementById('staff4click')
+    var click5 = document.getElementById('staff5click')
+    if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+      if (displaySettingM3 == 'block') {
+        mobilebio3.style.display = 'none'
+        click3.innerHTML = 'Learn More'
+      } else { 
+      if(displaySettingM2 == 'block'){
+        mobilebio2.style.display = 'none'
+        click2.innerHTML = 'Learn More'
+      } else if(displaySettingM1 == 'block'){
+        mobilebio1.style.display = 'none'
+        click1.innerHTML = 'Learn More'
+      } else if(displaySettingM4 == 'block') {
+        mobilebio4.style.display = 'none'
+        click4.innerHTML = 'Learn More'
+      } else if(displaySettingM5 == 'block') {
+        mobilebio5.style.display = 'none'
+        click5.innerHTML = 'Learn More'
+      }
+      mobilebio3.style.display = 'block'
+      click3.innerHTML = 'Close'
+    }
+  }
+    console.log("Normal Click Sent")
+    if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){}else
+    if(displaySetting3 == 'block'){
+      bio3.style.display = 'none'
+      click3.innerHTML = 'Learn More'
+    } else {
+    if(displaySetting2 == 'block'){
+      bio2.style.display = 'none'
+      click2.innerHTML = 'Learn More'
+    } else 
+    if(displaySetting1 == 'block'){
+      bio1.style.display = 'none'
+      click1.innerHTML = 'Learn More'
+    } else 
+    if(displaySetting4 == 'block') {
+      bio4.style.display = 'none'
+      click4.innerHTML = "Learn More"
+    } else 
+    if(displaySetting5 == 'block'){
+      bio5.style.display = 'none'
+      click5.innerHTML = "Learn More"
+    } 
+    bio3.style.display = 'block'
+    click3.innerHTML = 'Close'
+    bio3.scrollIntoView()
+ }
+   }
+ </script>
+
+<script>
+  function staff4text() {
+     console.log("Staff 4 Click sent")
+     var bio = document.getElementById('staff4bio');
+     var displaySetting = bio.style.display;
+     var click = document.getElementById('staff4click');
+     var bio1 = document.getElementById('erinbio');
+    var bio2 = document.getElementById('staff2bio');
+    var bio3 = document.getElementById('staff3bio');
+    var bio4 = document.getElementById('staff4bio');
+    var bio5 = document.getElementById('staff5bio');
+    var mobilebio1 = document.getElementById('erinbiomobile')
+    var mobilebio2 = document.getElementById('staff2biomobile')
+    var mobilebio3 = document.getElementById('staff3biomobile')
+    var mobilebio4 = document.getElementById('staff4biomobile')
+    var mobilebio5 = document.getElementById('staff5biomobile')
+    var displaySetting1 = bio1.style.display;
+    var displaySetting2 = bio2.style.display;
+    var displaySetting3 = bio3.style.display;
+    var displaySetting4 = bio4.style.display;
+    var displaySetting5 = bio5.style.display;
+    var displaySettingM1 = mobilebio1.style.display;
+    var displaySettingM2 = mobilebio2.style.display;
+    var displaySettingM3 = mobilebio3.style.display;
+    var displaySettingM4 = mobilebio4.style.display;
+    var displaySettingM5 = mobilebio5.style.display;
+    var click1 = document.getElementById('erinclick');
+    var click2 = document.getElementById('staff2click')
+    var click3 = document.getElementById('staff3click')
+    var click4 = document.getElementById('staff4click')
+    var click5 = document.getElementById('staff5click')
+    if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+      if (displaySettingM4 == 'block') {
+        mobilebio4.style.display = 'none'
+        click4.innerHTML = 'Learn More'
+      } else { 
+      if(displaySettingM2 == 'block'){
+        mobilebio2.style.display = 'none'
+        click2.innerHTML = 'Learn More'
+      } else if(displaySettingM3 == 'block'){
+        mobilebio3.style.display = 'none'
+        click3.innerHTML = 'Learn More'
+      } else if(displaySettingM1 == 'block') {
+        mobilebio1.style.display = 'none'
+        click1.innerHTML = 'Learn More'
+      } else if(displaySettingM5 == 'block') {
+        mobilebio5.style.display = 'none'
+        click5.innerHTML = 'Learn More'
+      }
+      mobilebio4.style.display = 'block'
+      click4.innerHTML = 'Close'
+    }
+  }
+    console.log("Normal Click Sent")
+    if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){}else
+    if(displaySetting4 == 'block'){
+      bio4.style.display = 'none'
+      click4.innerHTML = 'Learn More'
+    } else {
+    if(displaySetting2 == 'block'){
+      bio2.style.display = 'none'
+      click2.innerHTML = 'Learn More'
+    } else 
+    if(displaySetting3 == 'block'){
+      bio3.style.display = 'none'
+      click3.innerHTML = 'Learn More'
+    } else 
+    if(displaySetting1 == 'block') {
+      bio1.style.display = 'none'
+      click1.innerHTML = "Learn More"
+    } else 
+    if(displaySetting5 == 'block'){
+      bio5.style.display = 'none'
+      click5.innerHTML = "Learn More"
+    } 
+    bio4.style.display = 'block'
+    click4.innerHTML = 'Close'
+    bio4.scrollIntoView()
+ }
+   }
+ </script>
+
+<script>
+  function staff5text() {
+     console.log("Staff 5 Click sent")
+     var bio = document.getElementById('staff5bio');
+     var displaySetting = bio.style.display;
+     var click = document.getElementById('staff5click');
+     var bio1 = document.getElementById('erinbio');
+    var bio2 = document.getElementById('staff2bio');
+    var bio3 = document.getElementById('staff3bio');
+    var bio4 = document.getElementById('staff4bio');
+    var bio5 = document.getElementById('staff5bio');
+    var mobilebio1 = document.getElementById('erinbiomobile')
+    var mobilebio2 = document.getElementById('staff2biomobile')
+    var mobilebio3 = document.getElementById('staff3biomobile')
+    var mobilebio4 = document.getElementById('staff4biomobile')
+    var mobilebio5 = document.getElementById('staff5biomobile')
+    var displaySetting1 = bio1.style.display;
+    var displaySetting2 = bio2.style.display;
+    var displaySetting3 = bio3.style.display;
+    var displaySetting4 = bio4.style.display;
+    var displaySetting5 = bio5.style.display;
+    var displaySettingM1 = mobilebio1.style.display;
+    var displaySettingM2 = mobilebio2.style.display;
+    var displaySettingM3 = mobilebio3.style.display;
+    var displaySettingM4 = mobilebio4.style.display;
+    var displaySettingM5 = mobilebio5.style.display;
+    var click1 = document.getElementById('erinclick');
+    var click2 = document.getElementById('staff2click')
+    var click3 = document.getElementById('staff3click')
+    var click4 = document.getElementById('staff4click')
+    var click5 = document.getElementById('staff5click')
+    if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+      if (displaySettingM5 == 'block') {
+        mobilebio5.style.display = 'none'
+        click5.innerHTML = 'Learn More'
+      } else { 
+      if(displaySettingM2 == 'block'){
+        mobilebio2.style.display = 'none'
+        click2.innerHTML = 'Learn More'
+      } else if(displaySettingM3 == 'block'){
+        mobilebio3.style.display = 'none'
+        click3.innerHTML = 'Learn More'
+      } else if(displaySettingM4 == 'block') {
+        mobilebio4.style.display = 'none'
+        click4.innerHTML = 'Learn More'
+      } else if(displaySettingM1 == 'block') {
+        mobilebio1.style.display = 'none'
+        click1.innerHTML = 'Learn More'
+      }
+      mobilebio5.style.display = 'block'
+      click5.innerHTML = 'Close'
+    }
+  }
+    console.log("Normal Click Sent")
+    if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){}else
+    if(displaySetting5 == 'block'){
+      bio5.style.display = 'none'
+      click5.innerHTML = 'Learn More'
+    } else {
+    if(displaySetting2 == 'block'){
+      bio2.style.display = 'none'
+      click2.innerHTML = 'Learn More'
+    } else 
+    if(displaySetting3 == 'block'){
+      bio3.style.display = 'none'
+      click3.innerHTML = 'Learn More'
+    } else 
+    if(displaySetting4 == 'block') {
+      bio4.style.display = 'none'
+      click4.innerHTML = "Learn More"
+    } else 
+    if(displaySetting1 == 'block'){
+      bio1.style.display = 'none'
+      click1.innerHTML = "Learn More"
+    } 
+    bio5.style.display = 'block'
+    click5.innerHTML = 'Close'
+    bio5.scrollIntoView()
+ }
+   }
+ </script>
+
+<script>
+  function openmenu(){
+    var buttonpress = document.getElementById("openmenubutton")
+    var overlaymenu = document.getElementById("overlay")
+    buttonpress.style.display = 'none'
+    overlaymenu.style.display = 'block'
+    console.log("open")
+  }
+  function closemenu(){
+    var buttonpress = document.getElementById("openmenubutton")
+    var overlaymenu = document.getElementById("overlay")
+    overlaymenu.style.display = 'none'
+    buttonpress.style.display = 'block'
+    console.log("close")
+  }
+</script>
+
+<link rel="stylesheet" href="styles.css">
+<title>Country Critters Pet Grooming</title>
+</html>

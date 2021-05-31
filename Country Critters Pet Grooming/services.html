@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+
+<div class="topnav">
+    <a href="about.html">About</a>
+    <a href="https://www.facebook.com/CCPetGroomer/">Facebook</a>
+    <a href="https://www.google.com/maps/dir//country+critters+pet+grooming/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x8822f44422b18a99:0xd9f9c5815181bba9?sa=X&ved=2ahUKEwjyy6nA3IjvAhWFU80KHcUTAIAQ9RcwG3oECD8QBQ">Directions</a>
+    <a href="services.html">Services</a>
+    <a href="app.php">Client Application</a>
+    <a href="index.html">Home</a>
+    <a href="javascript:void(0);" class="icon" onclick="changepage()"></a>
+    <div class="rightnav">
+        Country Critters Pet Grooming
+    </div>
+    <div class="menu1">
+      <button id="openmenubutton"><img src="menu.png" width="50px" height="50px" onclick="openmenu()"></button>
+      </div>
+</div>
+
+<div class="background"></div>
+
+<body>
+  <div class="overlay" id="overlay">
+    <div class="menu">
+    <button id="closemenubutton"><img src="close.jpg" width="50px" height="50px" onclick="closemenu()"></button><br><br>
+    <a href="index.html" id="menubutton"><b>Home</b></a><br><br>
+    <a href="app.php" id="menubutton"><b>Client Application</b></a><br><br>
+    <a href = "services.html" id="menubutton"><b>Services</b></a><br><br>
+    <a href="https://www.google.com/maps/dir//country+critters+pet+grooming/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x8822f44422b18a99:0xd9f9c5815181bba9?sa=X&ved=2ahUKEwjyy6nA3IjvAhWFU80KHcUTAIAQ9RcwG3oECD8QBQ" id="menubutton"><b>Directions</b></a><br><br>
+    <a href="https://www.facebook.com/CCPetGroomer/" id="menubutton"><b>Facebook</b></a><br><br>
+    <a href="about.html" id="menubutton"><b>About</b></a><br><br>
+    </div>
+  </div>
+    <div class="description">
+      <div class="heading">
+        <header>Our Services</header>
+        Here at Country Critters Pet Grooming, we pride ourselves with our cuts. We offer the highest quality cuts that you will see around the area. <br>After your dog has been groomed, you will say you never thought your dog could look that good before!<br><br>
+        <b>Prices vary by Breed, Condition of Coat, Size, and Temperament. Additional Fees will be added if pet's coat needs <br>de-matting! All Pricing is a groomer's discretion!</b><br><br>
+      </div>
+      <div class="dropdown">
+        <button id="dropdownheader1" onclick="dropdown1()">Cuts</button>
+        <div id="dropdowntext1">
+        <b>Bath/Brush:</b> Includes Bath, Blow Out, Brush Out, Nail Trimming, Ear Cleaning/Plucking, Cologne Spritz, and Choice of bandanna or bow.<br><br>
+        <b>Full Grooming:</b> Includes Bath, Blow Out, Brush Out, Nail Trimming, Ear Cleaning/Plucking, Haircut/Trim, Cologne Spritz, and Choice of bandanna or bow.<br><br>
+        <b>Puppy Package: This package helps to introduce your pet to grooming at a young age. Its offered to puppies under 5 months of age.*</b><br>
+        Includes: Bath, Blow Out, Brush Out, Sanitary Trim, Face Trim, Feet Trim, Nail Trimming, Ear Cleaning/Plucking, Cologne Spritz, and Choice of bandanna or bow.<br>
+        <i>*This is intended for "Small" size puppies! Some larger breeds grow faster and may be a larger size before 5 months of age.</i>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button id="dropdownheader2" onclick="dropdown2()">Cat Grooming</button>
+        <div id="dropdowntext2">
+        <b>Short Haired:</b> Includes Bath, Blow Out, Brush Out, Nail Trimming, Ear Cleaning<br><br>
+        <b>Long Haired:</b> Includes Bath, Blow Out, Brush Out, Nail Trimming, Ear Cleaning<br><br>
+        <b>Lion Cut:</b> Includes Shave, bath if cat tolerates it, Nail Trimming, Ear Cleaning<br><br>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button id="dropdownheader3" onclick="dropdown3()">Nail Trim Clinics</button>
+        <div id="dropdowntext3">
+        We offer Nail Trim Clinics every Wednesday between 4:00 PM - 5:00 PM by appointment only. Please call (989)-224-9077 to schedule an appointment.<br><br>
+        <b>Nail Trim with Grinding: $15</b>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button id="dropdownheader4" onclick="dropdown4()">Add on Services</button>
+        <div id="dropdowntext4">
+        <b>Deshed Treatment:</b> price depends on size of dog and how much product used.<br><br>
+        <b>Teeth Brushing: $6</b><br><br>
+        <b>Nail Polish: $5</b>
+        </div>
+      </div>
+    </div>
+</body>
+
+<script>
+    function changepage() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }</script>
+
+<script>
+  function openmenu(){
+    var buttonpress = document.getElementById("openmenubutton")
+    var overlaymenu = document.getElementById("overlay")
+    buttonpress.style.display = 'none'
+    overlaymenu.style.display = 'block'
+    console.log("open")
+  }
+  function closemenu(){
+    var buttonpress = document.getElementById("openmenubutton")
+    var overlaymenu = document.getElementById("overlay")
+    overlaymenu.style.display = 'none'
+    buttonpress.style.display = 'block'
+    console.log("close")
+  }
+</script>
+
+<script>
+  var but1 = document.getElementById("dropdownheader1")
+  var but2 = document.getElementById("dropdownheader2")
+  var but3 = document.getElementById("dropdownheader3")
+  var but4 = document.getElementById("dropdownheader4")
+  var text1 = document.getElementById("dropdowntext1")
+  var text2 = document.getElementById("dropdowntext2")
+  var text3 = document.getElementById("dropdowntext3")
+  var text4 = document.getElementById("dropdowntext4")
+
+ function dropdown1(){
+  if(text1.style.display == "block"){
+    text1.style.display = "none"
+  } else {
+      if(text2.style.display == "block"){
+      text2.style.display = "none"
+    } else if(text3.style.display == "block"){
+      text3.style.display = "none"
+    } else if(text4.style.display == "block"){
+      text4.style.display = "none"
+    }
+    text1.style.display = "block"
+  }
+}
+ function dropdown2(){
+  if(text2.style.display == "block"){
+    text2.style.display = "none"
+  } else{
+    if(text1.style.display == "block"){
+      text1.style.display = "none"
+    } else if(text3.style.display == "block"){
+      text3.style.display = "none"
+    } else if(text4.style.display == "block"){
+      text4.style.display = "none"
+    }
+    text2.style.display = "block"
+  }
+ }
+ function dropdown3(){
+  if(text3.style.display == "block"){
+    text3.style.display = "none"
+  } else{
+    if(text1.style.display == "block"){
+      text1.style.display = "none"
+    } else if(text2.style.display == "block"){
+      text2.style.display = "none"
+    } else if(text4.style.display == "block"){
+      text4.style.display = "none"
+    }
+    text3.style.display = "block"
+  }
+ }
+ function dropdown4(){
+  if(text4.style.display == "block"){
+    text4.style.display = "none"
+  } else{
+    if(text1.style.display == "block"){
+      text1.style.display = "none"
+    } else if(text2.style.display == "block"){
+      text2.style.display = "none"
+    } else if(text3.style.display == "block"){
+      text3.style.display = "none"
+    }
+    text4.style.display = "block"
+  }
+ }
+</script>
+
+<link rel="stylesheet" href="styles.css">
+<title>Country Critters Pet Grooming</title>
+</html>

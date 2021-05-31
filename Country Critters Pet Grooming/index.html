@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<div class="topnav">
+    <a href="about.html">About</a>
+    <a href="https://www.facebook.com/CCPetGroomer/">Facebook</a>
+    <a href="https://www.google.com/maps/dir//country+critters+pet+grooming/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x8822f44422b18a99:0xd9f9c5815181bba9?sa=X&ved=2ahUKEwjyy6nA3IjvAhWFU80KHcUTAIAQ9RcwG3oECD8QBQ">Directions</a>
+    <a href="services.html">Services</a>
+    <a href="app.php">Client Application</a>
+    <a href="index.html">Home</a>
+    <a href="javascript:void(0);" class="icon" onclick="changepage()"></a>
+    <div class="rightnav">
+        Country Critters Pet Grooming
+    </div>
+    <div class="menu1">
+        <button id="openmenubutton"><img src="menu.png" width="50px" height="50px" onclick="openmenu()"></button>
+        </div>
+</div>
+
+<div class="background"></div>
+
+<body>
+    <div class="overlay" id="overlay">
+        <div class="menu">
+        <button id="closemenubutton"><img src="close.jpg" width="50px" height="50px" onclick="closemenu()"></button><br><br>
+        <a href="index.html" id="menubutton"><b>Home</b></a><br><br>
+        <a href="app.php" id="menubutton"><b>Client Application</b></a><br><br>
+        <a href = "services.html" id="menubutton"><b>Services</b></a><br><br>
+        <a href="https://www.google.com/maps/dir//country+critters+pet+grooming/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x8822f44422b18a99:0xd9f9c5815181bba9?sa=X&ved=2ahUKEwjyy6nA3IjvAhWFU80KHcUTAIAQ9RcwG3oECD8QBQ" id="menubutton"><b>Directions</b></a><br><br>
+        <a href="https://www.facebook.com/CCPetGroomer/" id="menubutton"><b>Facebook</b></a><br><br>
+        <a href="about.html" id="menubutton"><b>About</b></a><br><br>
+        </div>
+      </div>
+    <div class="ccpglogo1">
+        <img src="logo.png" id="ccpglogo" class="center">
+    </div>
+    <header>Welcome to Country Critters Pet Grooming!</header>
+    <div class="caption">
+        Paw's Down, Best Clip in Town!
+    </div>
+    <div class="news">
+        <div class="header">
+            <b>ALL NEW CLIENTS</b> must fill out the <a href="app.php">Client Application</a> form
+        </div>
+        <div class="description">
+        </div>
+    </div>
+    <div class="doges">
+        <img src="emma.jpg" id="emma">
+        <img src="baba.jpg" id="baba">
+    </div>
+</body>
+
+<script>
+    function changepage() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }</script>
+
+<script>
+    function openmenu(){
+      var buttonpress = document.getElementById("openmenubutton")
+      var overlaymenu = document.getElementById("overlay")
+      buttonpress.style.display = 'none'
+      overlaymenu.style.display = 'block'
+      console.log("open")
+    }
+    function closemenu(){
+      var buttonpress = document.getElementById("openmenubutton")
+      var overlaymenu = document.getElementById("overlay")
+      overlaymenu.style.display = 'none'
+      buttonpress.style.display = 'block'
+      console.log("close")
+    }
+  </script>
+<link rel="stylesheet" href="styles.css">
+<title>Country Critters Pet Grooming</title>
+</html>
